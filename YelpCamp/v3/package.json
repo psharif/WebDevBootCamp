@@ -1,0 +1,17 @@
+{
+  "name": "yelpcampv1",
+  "version": "1.0.0",
+  "description": "Starting Point For Yelp Camp App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedram Sharif",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.11"
+  }
+}

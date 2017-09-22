@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Product Shop Assignment</title>
+        <link rel="stylesheet" type="text/css" href="shop.css">
+    </head>
+    <body>
+        
+        <h1>Welcome to the Shop</h1> 
+        <h3>Please Look at the Products and add one if you feel like it.</h3>
+
+        <div id="productContainer">
+            <% products.forEach(function(product){ %>
+                <li> <%= product.name %> - $<%= product.price %> </li>
+            <% }) %>
+        </div>
+        
+        <img src="https://t3.ftcdn.net/jpg/00/24/35/48/500_F_24354812_zeG9C6jFGHWeH8phbiFVgMrhwFGzkpKa.jpg">
+       
+        <form action="/add" method="POST">
+            <label for="productName">Product Name: </label>
+            <input type="text" name="name" placeholder="Product Name">
+            <label for="price" id="price">Price: </label>
+            <input type="number" min="0.00" max="10000.00" step="1" name="price"
+            placeholder="price"/>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
