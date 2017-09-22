@@ -1,0 +1,16 @@
+{
+  "name": "apiassignmentpractice",
+  "version": "1.0.0",
+  "description": "Practices Web API calls using request from node package manager. Uses OMDB api to request movie titles and years. ",
+  "main": "moviePractice.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedram Sharfi",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "request": "^2.81.0"
+  }
+}
